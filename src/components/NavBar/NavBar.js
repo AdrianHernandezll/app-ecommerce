@@ -11,6 +11,7 @@ const NavBar = () => {
                 Web Solutions
             </NavLink>
 
+
             <button
                 className="navbar-toggler"
                 type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +20,7 @@ const NavBar = () => {
 
             <div
                 className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav m-auto">
+                <ul className="navbar-nav ml-auto">
 
                     <div className="hori-selector">
                         <div className="left"></div>
