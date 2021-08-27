@@ -2,18 +2,16 @@ body {
   font-family: "Roboto", sans-serif;
   background: #fff;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
 
 i {
-  margin-right: 1rem;
+  margin-right: 10px;
 }
-
 .navbar-logo {
-  padding: 1.5rem;
+  padding: 15px;
   color: #fff;
   pointer-events: none;
 }
@@ -22,7 +20,6 @@ i {
   background-color: #000000;
   padding: 0px;
 }
-
 #navbarSupportedContent {
   overflow: hidden;
   position: relative;
@@ -32,7 +29,7 @@ i {
   margin: 0px;
 }
 #navbarSupportedContent ul li a i {
-  margin-right: 1rem;
+  margin-right: 10px;
 }
 #navbarSupportedContent li {
   list-style-type: none;
@@ -41,20 +38,19 @@ i {
 #navbarSupportedContent ul li a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 15px;
   display: block;
-  padding: 1.2rem 1.2rem;
+  padding: 20px 20px;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   position: relative;
 }
-
 #navbarSupportedContent > ul > li.active > a {
   color: #000000;
   background-color: transparent;
   transition: all 0.7s;
 }
-#navbarSupportedContent a:not(:only-child)::after {
+#navbarSupportedContent a:not(:only-child):after {
   content: "\f105";
   position: absolute;
   right: 20px;
@@ -67,16 +63,17 @@ i {
   font-weight: 900;
   transition: 0.5s;
 }
-#navbarSupportedContent .active > a:not(:only-child)::after {
+#navbarSupportedContent .active > a:not(:only-child):after {
   transform: rotate(90deg);
 }
+
 .hori-selector {
   display: inline-block;
   position: absolute;
   height: 100%;
   top: 0px;
   left: 0px;
-  transition-delay: 0.6s;
+  transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background-color: #fff;
   border-top-left-radius: 15px;
@@ -97,20 +94,51 @@ i {
 .hori-selector .left {
   left: -25px;
 }
-.hori-selector .right::before,
-.hori-selector .left::before {
-  content: " ";
+.hori-selector .right:before,
+.hori-selector .left:before {
+  content: "";
   position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #000000;
 }
-.hori-selector .right::before {
+.hori-selector .right:before {
   bottom: 0;
   right: -25px;
 }
-.hori-selector .left::before {
+.hori-selector .left:before {
   bottom: 0;
   left: -25px;
+}
+@media (max-width: 991px) {
+  #navbarSupportedContent ul li a {
+    padding: 12px 30px;
+  }
+  .hori-selector {
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 10px;
+  }
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+  .hori-selector .right {
+    bottom: -25px;
+  }
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
 }
