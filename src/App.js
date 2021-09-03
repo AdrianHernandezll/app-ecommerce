@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -12,7 +12,7 @@ import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Products from './pages/Products/Products';
 import Services from './pages/Services/Services';
-import style from './scss/style.scss';
+
 
 
 
