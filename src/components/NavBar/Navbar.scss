@@ -15,7 +15,6 @@ i {
   color: #fff;
   pointer-events: none;
 }
-
 .navbar-mainbg {
   background-color: #2f55a4;
   padding: 0px;
@@ -111,6 +110,12 @@ i {
 .hori-selector .left:before {
   bottom: 0;
   left: -25px;
+}
+.card-widget i {
+  color: #fff;
+  padding: 0 20px;
+  font-size: 25px;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   #navbarSupportedContent ul li a {

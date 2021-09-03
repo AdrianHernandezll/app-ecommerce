@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Navbar.scss';
+import CardWidget from './CardWidget';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 
@@ -44,73 +45,81 @@ const NavBar = () => {
     }, []);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-mainbg">
+        <>
+            <nav className="navbar navbar-expand-lg navbar-mainbg">
 
-            <NavLink className="navbar-brand navbar-logo" to="/" exact>
-                All-Deports
-            </NavLink>
+                <NavLink className="navbar-brand navbar-logo" to="/" exact>
+                    All Deports
+                </NavLink>
 
 
-            <button
-                className="navbar-toggler"
-                onClick={function () {
-                    setTimeout(function () { animation(); });
-                }}
-                type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i className="fas fa-bars text-white"></i>
-            </button>
+                <button
+                    className="navbar-toggler"
+                    onClick={function () {
+                        setTimeout(function () { animation(); });
+                    }}
+                    type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i className="fas fa-bars text-white"></i>
+                </button>
+                <div>
+                    <CardWidget />
+                </div>
 
-            <div
-                className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav ml-auto">
+                <div
+                    className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto">
 
-                    <div className="hori-selector">
-                        <div className="left"></div>
-                        <div className="right"></div>
-                    </div>
+                        <div className="hori-selector">
+                            <div className="left"></div>
+                            <div className="right"></div>
+                        </div>
 
-                    <li className="nav-item active">
-                        <NavLink className="nav-link" to="/" exact>
-                            <i
-                                className="fas fa-tachometer-alt">
-                            </i>Inicio
-                        </NavLink>
-                    </li>
+                        <li className="nav-item active">
+                            <NavLink className="nav-link" to="/" exact>
+                                <i
+                                    className="fas fa-tachometer-alt">
+                                </i>Inicio
+                            </NavLink>
+                        </li>
 
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/about" exact>
-                            <i
-                                className="far fa-address-book">
-                            </i>Sobre Nosotros
-                        </NavLink>
-                    </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/about" exact>
+                                <i
+                                    className="far fa-address-book">
+                                </i>Sobre Nosotros
+                            </NavLink>
+                        </li>
 
-                    <li className="nav-item active">
-                        <NavLink className="nav-link" to="/products" exact>
-                            <i
-                                className="far fa-chart-bar">
-                            </i>Productos
-                        </NavLink>
-                    </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/products" exact>
+                                <i
+                                    className="far fa-chart-bar">
+                                </i>Productos
+                            </NavLink>
+                        </li>
 
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/services" exact>
-                            <i
-                                className="far fa-clone">
-                            </i>Servicios
-                        </NavLink>
-                    </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/services" exact>
+                                <i
+                                    className="far fa-clone">
+                                </i>Servicios
+                            </NavLink>
+                        </li>
 
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/contact" exact>
-                            <i
-                                className="far fa-comment-dots">
-                            </i>Contactanos
-                        </NavLink>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/contact" exact>
+                                <i
+                                    className="far fa-comment-dots">
+                                </i>Contactanos
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+        </>
 
     )
 }
