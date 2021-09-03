@@ -76,41 +76,31 @@ const NavBar = () => {
 
                         <li className="nav-item active">
                             <NavLink className="nav-link" to="/" exact>
-                                <i
-                                    className="fas fa-tachometer-alt">
-                                </i>Inicio
+                                Inicio
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/about" exact>
-                                <i
-                                    className="far fa-address-book">
-                                </i>Sobre Nosotros
+                                Sobre Nosotros
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/products" exact>
-                                <i
-                                    className="far fa-chart-bar">
-                                </i>Productos
+                                Productos
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/services" exact>
-                                <i
-                                    className="far fa-clone">
-                                </i>Servicios
+                                Servicios
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/contact" exact>
-                                <i
-                                    className="far fa-comment-dots">
-                                </i>Contactanos
+                                Contactanos
                             </NavLink>
                         </li>
                     </ul>
