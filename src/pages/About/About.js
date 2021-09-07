@@ -8,8 +8,6 @@ const About = () => {
             <h1 className="text-center" style={{ paddingTop: "30%" }}>
                 Sobre Nosotros
             </h1>
-            <ItemListContainer />
-
         </div>
     )
 }

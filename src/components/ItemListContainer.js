@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-const ItemListContainer = () => {
+
+const ItemListContainer = ({ titulo }) => {
     return (
         <>
-            <h1>Hola soy un ItemListContainer</h1>
+            <p className="text-center mt-3">Hola bienvenido al {titulo} </p>
         </>
     )
 }
