@@ -1,12 +1,12 @@
 import React from 'react'
-import ItemListContainer from '../../components/ItemListContainer'
+import ItemCount from '../../components/ItemCount'
+
+
 
 const Home = () => {
     return (
         <div className="container">
-            <h1 className="text-center" style={{ paddingTop: "30%" }}>
-                <ItemListContainer />
-            </h1>
+            <ItemCount />
         </div>
     )
 }

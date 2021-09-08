@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const ItemListContainer = ({ titulo }) => {
+const ItemListContainer = () => {
     return (
         <>
-            <p className="text-center mt-3">Hola bienvenido al {titulo} </p>
+            <p className="text-center ">Hola bienvenido al {titulo} </p>
         </>
     )
 }
