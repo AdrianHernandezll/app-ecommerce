@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const ItemListContainer = () => {
+const ItemListContainer = ({ titulo }) => {
     return (
         <>
             <p className="text-center ">Hola bienvenido al {titulo} </p>

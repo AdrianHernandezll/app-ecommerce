@@ -33,7 +33,7 @@ const ItemCount = () => {
 
                 <div className="card-body text-center">
                     <button className="btn btn-primary" onClick={handleAdd}>+1</button>
-                    <button className="btn btn-primary mx-auto" disabled={counter == 0} onClick={handleReset}>Agregar al Carro</button>
+                    <button className="btn btn-primary mx-auto" disabled={counter === 0} onClick={handleReset}>Agregar al Carro</button>
                     <button className="btn btn-primary" disabled={counter <= 0} onClick={handleSubtract}>-1</button>
                 </div>
             </div>
