@@ -5,8 +5,8 @@ const CardWidget = () => {
         <div className="d-flex align-items-center mx-3">
 
             <a href="/">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge rounded-pill badge-notification bg-danger">19+</span>
+                <i className="fas fa-shopping-cart"></i>
+                <span className="badge rounded-pill badge-notification bg-danger">19+</span>
             </a>
 
         </div>
